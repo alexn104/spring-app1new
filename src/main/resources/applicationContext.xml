@@ -13,7 +13,8 @@
           class="ru.alexn.springcourse.ClassicMusic">
     </bean>
     <bean id="musicPlayer"
-    class="ru.alexn.springcourse.MusicPlayer">
+    class="ru.alexn.springcourse.MusicPlayer"
+    scope="prototype">
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
